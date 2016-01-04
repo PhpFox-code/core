@@ -1,6 +1,6 @@
 <?php 
 /**
- * [PHPFOX_HEADER]
+ * [NULLED by DarkGoth 2015]
  * 
  * @copyright		[PHPFOX_COPYRIGHT]
  * @author			Raymond Benc
@@ -21,18 +21,18 @@ defined('PHPFOX') or exit('NO DICE!');
 </div>
 <div id="client_details" style="display:none;">
 	<div class="table_header">
-		Enter your license ID &amp; Key:
+		Enter your license ID &amp; Key: [NULLED BY DARKGOTH 2015]
 	</div>
 	<form method="post" action="#key" id="js_form">
 		<div><input type="hidden" id="license_trial" name="val[is_trial]" value="0"></div>
 		<div class="table">
 			<div class="table_right">
-				<input autocomplete="off" type="text" name="val[license_id]" id="license_id" value="{value type='input' id='license_id'}" size="30" placeholder="License ID" />
+				<input autocomplete="off" type="text" name="val[license_id]" id="license_id" value="{value type='input' id='license_id'}" size="30" placeholder="ENTER ANY KEY YOU WANT" />
 			</div>
 		</div>
 		<div class="table">
 			<div class="table_right">
-				<input autocomplete="off" type="text" name="val[license_key]" id="license_key" value="" size="30" placeholder="License Key" />
+				<input autocomplete="off" type="text" name="val[license_key]" id="license_key" value="" size="30" placeholder="ENTER ANY KEY YOU WANT" />
 			</div>
 		</div>
 		<div class="table_clear">

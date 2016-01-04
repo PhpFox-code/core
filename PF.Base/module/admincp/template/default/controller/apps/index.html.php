@@ -53,23 +53,6 @@
 				{/if}
 			</div>
 		</section>
-
-		<section class="preview">
-			{*
-			<div>
-				{if $aNewProducts}
-					<h1>Apps Pending Installation</h1>
-					{foreach from=$aNewProducts item=product}
-					{template file='admincp.block.product.install'}
-					{/foreach}
-				{/if}
-			</div>
-			*}
-			<h1>Featured Apps</h1>
-			<div class="phpfox_store_featured" data-type="apps" data-parent="{url link='admincp.store' load='apps'}">
-
-			</div>
-		</section>
 	</div>
 
 {/if}

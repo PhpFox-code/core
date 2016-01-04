@@ -1,6 +1,6 @@
 <?php
 /**
- * [PHPFOX_HEADER]
+ * [Nulled by DarkGoth - NCP TEAM] - 2015
  */
 
 defined('PHPFOX') or exit('NO DICE!');
@@ -18,7 +18,7 @@ class Module_Pages
 	public static $aDevelopers = array(
 		array(
 			'name' => 'Raymond_Benc',
-			'website' => 'www.phpfox.com'
+			'website' => ''
 		)
 	);
 	

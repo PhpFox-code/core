@@ -1,6 +1,6 @@
 <?php 
 /**
- * [PHPFOX_HEADER]
+ * [Nulled by DarkGoth - NCP TEAM] - 2015
  * 
  * @copyright		[PHPFOX_COPYRIGHT]
  * @author  		Raymond Benc
@@ -38,9 +38,5 @@ defined('PHPFOX') or exit('NO DICE!');
 			</tr>
 		{/foreach}
 		</table>
-	</section>
-	<section class="preview">
-		<h1>Featured Language Packs</h1>
-		<div class="phpfox_store_featured" data-type="language" data-parent="{url link='admincp.store' load='language'}"></div>
 	</section>
 </div>

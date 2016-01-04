@@ -1,6 +1,6 @@
 <?php
 /**
- * [PHPFOX_HEADER]
+ * [Nulled by DarkGoth - NCP TEAM] - 2015
  */
 
 defined('PHPFOX') or exit('NO DICE!');
@@ -38,8 +38,7 @@ class Core_Component_Block_News extends Phpfox_Component
 		}
 		
 		$this->template()->assign(array(
-				'sHeader' => Phpfox::getPhrase('admincp.phpfox_news_and_updates'),
-				'aPhpfoxNews' => $aNews
+
 			)
 		);
 		

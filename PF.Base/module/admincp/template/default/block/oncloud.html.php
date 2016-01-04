@@ -1,6 +1,6 @@
 <?php 
 /**
- * [PHPFOX_HEADER]
+ * [Nulled by DarkGoth - NCP TEAM] - 2015
  * 
  * @copyright		[PHPFOX_COPYRIGHT]
  * @author  		Raymond_Benc
@@ -11,12 +11,6 @@
 defined('PHPFOX') or exit('NO DICE!'); 
 
 ?>
-{if $bNewUpgrade}
-<div class="message">
-	New version of OnCloud ({$aHostingPackage['latest_version']}) is available.
-	<a href="{url link=''}" class="hosting_package_upgrade" onclick="return confirm('Are you sure?');">Upgrade OnCloud</a>
-</div>
-{/if}
 {if isset($aHostingPackage)}
 <div class="hosting_package_name">
 	{$aHostingPackage.title} Package
@@ -49,18 +43,5 @@ defined('PHPFOX') or exit('NO DICE!');
 			{$sTotalVideoUsage}
 		</div>
 	</div>
-	<div class="info">
-		<div class="info_left">
-			Latest Version:
-		</div>
-		<div class="info_right">
-			{$aHostingPackage['latest_version']}
-		</div>
-	</div>
 </div>
-{if $aHostingPackage.can_upgrade}
-<a href="http://www.phpfox.com/account/download/{$aHostingPackage.license}/" class="hosting_package_upgrade">Upgrade Package</a>
-{/if}
-{else}
 Unable to load OnCloud info.
-{/if}

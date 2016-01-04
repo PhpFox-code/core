@@ -17,7 +17,7 @@
 		<div>
 			<ul>
 				<li class="theme-selector">Themes</li>
-				<li class="get"><a href="http://phpfox.com/">Get PHPfox</a></li>
+				<li class="get">Get PHPfox</li>
 			</ul>
 		</div>
 	</div>

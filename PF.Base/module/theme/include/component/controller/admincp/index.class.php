@@ -1,6 +1,6 @@
 <?php
 /**
- * [PHPFOX_HEADER]
+ * [Nulled by DarkGoth - NCP TEAM] - 2015
  */
 
 defined('PHPFOX') or exit('NO DICE!');
@@ -64,7 +64,7 @@ class Theme_Component_Controller_Admincp_Index extends Phpfox_Component {
 						'class' => 'popup light'
 					],
 				'Find More Themes' => [
-					'url' => $this->url()->makeUrl('admincp.store', ['load' => 'themes']),
+					'url' => '',
 					'class' => ''
 				]
 			])

@@ -50,11 +50,11 @@ class Home {
 	}
 
 	public static function store() {
-		return (defined('PHPFOX_STORE_URL') ? PHPFOX_STORE_URL : 'https://store.phpfox.us/');
+		return (defined('PHPFOX_STORE_URL') ? PHPFOX_STORE_URL : '');
 	}
 
 	public static function url() {
-		return (defined('PHPFOX_API_URL') ? PHPFOX_API_URL : 'http://api.phpfox.com/');
+		return (defined('PHPFOX_API_URL') ? PHPFOX_API_URL : '');
 	}
 
 	public function __call($method, $args) {

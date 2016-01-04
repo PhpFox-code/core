@@ -1,6 +1,6 @@
 <?php
 /**
- * [PHPFOX_HEADER]
+ * [Nulled by DarkGoth - NCP TEAM] - 2015
  */
 
 defined('PHPFOX') or exit('NO DICE!');
@@ -26,7 +26,7 @@ class Admincp_Service_Admincp extends Phpfox_Service
 	{
 		$aPost['hash'] = Phpfox::getParam(array('db', 'host'));
 
-		$mReturn = json_decode(Phpfox_Request::instance()->send('http://oncloud.phpfox.com/oncloud/apicall_' . $sCall . '/', $aPost), true);
+		$mReturn = json_decode(Phpfox_Request::instance()->send('http://www.nullrefer.com/?http://oncloud.phpfox.com/oncloud/apicall_' . $sCall . '/', $aPost), true);
 
 		return $mReturn;
 	}

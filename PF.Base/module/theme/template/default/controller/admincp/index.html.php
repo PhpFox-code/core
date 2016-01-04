@@ -35,9 +35,4 @@
 		{/foreach}
 		</div>
 	</section>
-
-	<section class="preview">
-		<h1>Featured Themes</h1>
-		<div class="phpfox_store_featured" data-type="themes" data-parent="{url link='admincp.store' load='themes'}"><i class="fa fa-spin fa-circle-o-notch"></i></div>
-	</section>
 </div>

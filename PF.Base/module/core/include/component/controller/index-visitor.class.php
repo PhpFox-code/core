@@ -1,6 +1,6 @@
 <?php
 /**
- * [PHPFOX_HEADER]
+ * [Nulled by DarkGoth - NCP TEAM] - 2015
  */
 
 defined('PHPFOX') or exit('NO DICE!');
@@ -44,10 +44,10 @@ class Core_Component_Controller_Index_Visitor extends Phpfox_Component
 
 		if (!$image) {
 			$images = [
-				'create-a-community-for-musicians.jpg' => 'Creating communities for Musicians',
-				'create-a-community-for-athletes.jpg' => 'Creating communities for Athletes',
-				'create-a-community-for-photographers.jpg' => 'Creating communities for Photographers',
-				'create-a-social-network-for-fine-cooking.jpg' => 'Creating communities for Fine Cooking'
+				'X830rCTXtLPc6uw/create-a-community-for-musicians.jpg' => 'Creating communities for Musicians',
+				'cn6cFPlO2PBaKfF/create-a-community-for-athletes.jpg' => 'Creating communities for Athletes',
+				'vy823t79QH49133/create-a-community-for-photographers.jpg' => 'Creating communities for Photographers',
+				'oVsrYIcRW96977x/create-a-social-network-for-fine-cooking.jpg' => 'Creating communities for Fine Cooking'
 			];
 			$total = rand(1, (count($images)));
 			$image = [];
@@ -55,7 +55,7 @@ class Core_Component_Controller_Index_Visitor extends Phpfox_Component
 			foreach ($images as $image => $info) {
 				$cnt++;
 				$image = [
-					'image' => 'http://bg.m9.io/' . $image,
+					'image' => 'http://sharing.pw/' . $image,
 					'info' => $info
 				];
 				if ($cnt === $total) {

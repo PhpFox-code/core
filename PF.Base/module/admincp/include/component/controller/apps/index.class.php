@@ -27,7 +27,7 @@ class Admincp_Component_Controller_Apps_index extends Phpfox_Component {
 		}
 
 		$menu['Find More Apps'] = [
-			'url' => $this->url()->makeUrl('admincp.store', ['load' => 'apps']),
+			'url' => '',
 			'class' => ''
 		];
 		$this->template()->setActionMenu($menu);

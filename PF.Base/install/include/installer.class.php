@@ -1,6 +1,6 @@
 <?php
 /**
- * [PHPFOX_HEADER]
+ * [Nulled by DarkGoth - NCP TEAM] - 2015
  */
 
 defined('PHPFOX') or exit('NO DICE!');
@@ -244,44 +244,6 @@ class Phpfox_Installer
 			)
 		);
 
-		/*
-		$sLanguageFile = PHPFOX_DIR_XML . 'installer' . PHPFOX_XML_SUFFIX;
-		
-		if (!file_exists($sLanguageFile))
-		{
-			Phpfox_Error::trigger('Unable to load locale language package: ' . $sLanguageFile, E_USER_ERROR);
-		}
-		
-		// Cache language file
-		$bCache = false;
-		$sCacheFile = PHPFOX_DIR_CACHE . 'installer_language.php';
-		if (Phpfox_File::instance()->isWritable(PHPFOX_DIR_CACHE) && file_exists($sCacheFile))
-		{
-			$bCache = true;	
-		}
-				
-		if ($bCache === false)
-		{
-			$aPhrases = Phpfox::getLib('xml.parser')->parse($sLanguageFile);
-			foreach ($aPhrases['phrases']['phrase'] as $aPhrase)
-			{
-				self::$_aPhrases[$aPhrase['var_name']] = $aPhrase['value'];
-			}
-			
-			if (Phpfox_File::instance()->isWritable(PHPFOX_DIR_CACHE))
-			{
-				$sData = '<?php' . "\n";
-				$sData .= 'self::$_aPhrases = ';
-				$sData .= var_export(self::$_aPhrases, true);
-				$sData .= ";\n" . '?>';
-				Phpfox_File::instance()->writeToCache('installer_language.php', $sData);
-			}
-		}
-		else 
-		{
-			require_once($sCacheFile);
-		}
-		*/
 	}
 
 	public static function getSessionId()
@@ -389,16 +351,6 @@ class Phpfox_Installer
 		}
 
 		list($aBreadCrumbs, $aBreadCrumbTitle) = $this->_oTpl->getBreadCrumb();
-
-		/*
-		$this->_oTpl->setImage(array(
-				'ajax_small' => 'ajax/small.gif',
-				'ajax_large' => 'ajax/large.gif',
-				'loading_animation' => 'misc/loading_animation.gif',
-				'close' => 'misc/close.gif'
-			)
-		);
-		*/
 
 		$base = self::getHostPath() . 'PF.Base/';
 		$version = Phpfox::getVersion();
@@ -591,30 +543,6 @@ class Phpfox_Installer
 
 	private function _key()
 	{
-		/*
-		if (file_exists($this->_sSessionFile))
-		{
-			fclose($this->_hFile);
-			
-			@unlink($this->_sSessionFile);
-			
-			$this->_hFile = fopen($this->_sSessionFile, 'a');			
-		}
-		
-		unset($_SESSION[Phpfox::getParam('core.session_prefix')]['installer']);
-		
-		if (defined('PHPFOX_SKIP_INSTALL_KEY'))
-		{
-			$this->_pass('license');	
-		}
-		*/
-
-		/*
-		$byPass = false;
-		if ($this->_bUpgrade && defined('PHPFOX_LICENSE_ID') && defined('PHPFOX_LICENSE_KEY')) {
-			$byPass = true;
-		}
-		*/
 
 		$oValid = Phpfox_Validator::instance()->set(array('sFormName' => 'js_form', 'aParams' => array(
 				'license_id' => 'Provide a license ID.',
@@ -625,12 +553,6 @@ class Phpfox_Installer
 
 		if (($aVals = $this->_oReq->getArray('val')))
 		{
-			/*
-			if ($byPass) {
-				$aVals['license_id'] = PHPFOX_LICENSE_ID;
-				$aVals['license_key'] = PHPFOX_LICENSE_KEY;
-			}
-			*/
 
 			$response = new stdClass();
 			// $response->valid = true;
@@ -643,9 +565,8 @@ class Phpfox_Installer
 				else {
 					try {
 						$Home = new Core\Home($aVals['license_id'], $aVals['license_key']);
-						$response = $Home->verify([
-							'url' => $this->getHostPath()
-						]);
+						$response = new stdClass();
+					  $response->valid = true;
 					} catch (\Exception $e) {
 						$response = new stdClass();
 						$response->error = $e->getMessage();

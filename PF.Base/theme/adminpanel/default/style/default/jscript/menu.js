@@ -4,7 +4,7 @@ $Behavior.adminMenuClick = function()
 {
 	var s = $('#phpfox_store_load');
 	if (s.length && !$('#phpfox_store').length) {
-		var url = 'https://store.phpfox.us/';
+		var url = '';
 		if (s.data('url')) {
 			url = s.data('url');
 		}
@@ -20,7 +20,7 @@ $Behavior.adminMenuClick = function()
 		$('.phpfox-product').each(function() {
 			var t = $(this);
 
-			var url = 'https://store.phpfox.us/product/' + t.data('internal-id') + '/';
+			var url = '' + t.data('internal-id') + '/';
 			$.ajax({
 				url: url + 'view.json',
 				success: function(e) {
@@ -50,10 +50,9 @@ $Behavior.adminMenuClick = function()
 	var storeFeatured = $('.phpfox_store_featured');
 	if (storeFeatured.length && !storeFeatured.hasClass('is_built')) {
 		var parentUrl = storeFeatured.data('parent');
-		var url = 'https://store.phpfox.us/featured';
+		var url = '';
 
 		storeFeatured.addClass('is_built');
-		// url = 'http://localhost/moxi9/moxi9.com/featured';
 		$.ajax({
 			url: url,
 			data: 'v=1&type=' + storeFeatured.data('type'),

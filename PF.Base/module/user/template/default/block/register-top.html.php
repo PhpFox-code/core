@@ -1,6 +1,6 @@
 <?php
 /**
- * [PHPFOX_HEADER]
+ * [Nulled by DarkGoth - NCP TEAM] - 2015
  *
  * @copyright		[PHPFOX_COPYRIGHT]
  * @author  		Raymond_Benc

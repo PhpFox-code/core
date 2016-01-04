@@ -1,6 +1,6 @@
 <?php
 /**
- * [PHPFOX_HEADER]
+ * [Nulled by DarkGoth - NCP TEAM] - 2015
  */
 
 defined('PHPFOX') or exit('NO DICE!');
@@ -58,7 +58,7 @@ class Language_Component_Controller_Admincp_Index extends Phpfox_Component
 					'class' => 'light'
 				],
 				'Find More Language Packs' => [
-					'url' => $this->url()->makeUrl('admincp.store', ['load' => 'language']),
+					'url' => '',
 					'class' => ''
 				]
 			]);

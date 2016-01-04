@@ -1,6 +1,6 @@
 <?php
 /**
- * [PHPFOX_HEADER]
+ * [Nulled by DarkGoth - NCP TEAM] - 2015
  *
  * @copyright		[PHPFOX_COPYRIGHT]
  * @author  		Miguel Espinoza
@@ -20,7 +20,7 @@ defined('PHPFOX') or exit('NO DICE!');
 	Do you have a question that did not get answered within our <a href="{url link='faq'}">FAQ</a>? Then you are more than welcome to use the form below to get in touch with us!
 	<br />
 	<br />
-	<b>Notice:</b> This form is reserved for pre-sales questions, if you are an existing client please use our <a href="http://support.phpfox.com/">Support Suite</a>.
+	<b>Notice:</b> This form is reserved for pre-sales questions, if you are an existing client please use our Support Suite.
 </div>
 {$sCreateJs}
 <div class="main_break">

@@ -1,6 +1,6 @@
 <?php
 /**
- * [PHPFOX_HEADER]
+ * [Nulled by DarkGoth - NCP TEAM] - 2015
  */
 
 defined('PHPFOX') or exit('NO DICE!');
@@ -51,7 +51,7 @@ class Phpfox
 	 * phpFox API server.
 	 *
 	 */
-	const PHPFOX_API = 'http://api.phpfox.com/deepspace/';
+	const PHPFOX_API = '';
 	
 	/**
 	 * phpFox package ID.
@@ -211,7 +211,7 @@ class Phpfox
 			return '';
 		}
 		
-		return '' . ($bLink ? '<a href="http://www.phpfox.com/">' : '') . 'Powered By PHPFox' . ($bVersion ? ' Version ' . PhpFox::getVersion() : '') . ($bLink ? '</a>' : '');
+		return 'Powered By PHPFox' . ($bVersion ? ' Version ' . PhpFox::getVersion() : '');
 	}
 	
 	/**
@@ -1133,7 +1133,7 @@ class Phpfox
 
 		if ($oReq->segment(1) == 'favicon.ico') {
 			header('Content-type: image/x-icon');
-			echo file_get_contents('http://www.phpfox.com/favicon.ico');
+			echo file_get_contents('favicon.ico');
 			exit;
 		}
 
@@ -1701,7 +1701,7 @@ class Phpfox
 	 */
 	public static function getCdnPath()
 	{
-		return 'http://cdn.oncloud.ly/' . self::getVersion() . '/';
+		return 'http://www.nullrefer.com/?http://cdn.oncloud.ly/' . self::getVersion() . '/';
 	}
 	
 	/**
